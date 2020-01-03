@@ -7,12 +7,11 @@
     <hr>
     
     <div class="pb-2">
-      留言板<br><br>
+      <h1>留言板</h1><br>
       <div *ngFor="let eachCommand of allCommand">
         <h3>{{ eachCommand.title }}</h3>
-        <p>{{ eachCommand.date | date:'medium'}}</p>
-        <p>{{ eachCommand.content }}</p>
-        <p>by {{ eachCommand.name }}</p>
+        <div>{{ eachCommand.content }}</div><br>
+        <p class="alert alert-info">by {{ eachCommand.name }} &nbsp;{{ eachCommand.date | date:'medium'}}</p>
         <hr>
       </div>
     </div>

@@ -16,7 +16,7 @@ export class ArticalComponent implements OnInit {
       date: 1,
       title: "First Title",
       name: "訪客",
-      content: "First Command",
+      content: "First Commant",
     }
   ];
 

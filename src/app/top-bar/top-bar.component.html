@@ -1,5 +1,29 @@
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" [routerLink]="['/']">文章列表</a>
+    </div>
+    <ul class="nav navbar-nav">
+      
+      
+      <li class="" *ngIf="readLocalStorageValue(); else loginButton">
+        <a (click)="logout()">登出</a>
+      </li>
+      <ng-template #loginButton>
+        <li class=""><a [routerLink]="['/login']">登入</a></li>
+      </ng-template>
 
-  <a [routerLink]="['/']"><h1>Home</h1></a>
+      <li class="active" *ngIf="readLocalStorageValue(); else visitor"><a>{{ visitor_name }} 你好</a></li>
+      <ng-template #visitor  class="active">
+        <li class="active"><a>訪客 你好</a></li>
+      </ng-template>
+      
+    </ul>
+  </div>
+
+
+
+  <!-- <a [routerLink]="['/']"><h1>Home</h1></a>
 
   <a>
     <div>
@@ -17,5 +41,6 @@
     <a [routerLink]="['/login']" class="button fancy-button">
       登入
     </a>
-  </ng-template>
+  </ng-template> -->
 
+</div>

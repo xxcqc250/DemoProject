@@ -28,7 +28,7 @@ export class CommandFormComponent implements OnInit {
       date: (new Date()).getTime(),
       name: name,
       title: this.CommandTitle,
-      content: this.CommandContent,
+      content: this.CommandContent.replace("\r\n", "\\r\\n"),
     };
 
     this.addCommand.emit(command_obj);

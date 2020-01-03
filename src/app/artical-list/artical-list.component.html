@@ -1,9 +1,15 @@
-<div class="p-5 c-container">
-    <h3>文章列表</h3>
+<div class="pt-4">
+  <img src="/assets/MESSAGE_BOARD.jpg" class="img" style="width: 100%;"> 
+  <div class="c-container">
+    <!-- <img src="/assets/book.png" class="img-rounded"  width="50" >  -->
+    <!-- <p>Feel Free To Leave Comment</p> -->
+    <h3>文章列表</h3><br>
     <div *ngFor="let artical of articals" class="p-3">
+      <img src="/assets/book.png" width="30" >&nbsp;
       <a [routerLink]="['artical', artical.id]">
-        <h1>{{ artical.title }}</h1>
+        {{ artical.title }}
       </a>
       <hr>
     </div>
   </div>
+</div>
