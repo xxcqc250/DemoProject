@@ -1,0 +1,9 @@
+<div class="p-5 c-container">
+    <h3>文章列表</h3>
+    <div *ngFor="let artical of articals" class="p-3">
+      <a [routerLink]="['artical', artical.id]">
+        <h1>{{ artical.title }}</h1>
+      </a>
+      <hr>
+    </div>
+  </div>

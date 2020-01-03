@@ -1,0 +1,21 @@
+<div class="p-5 c-container">
+    <div *ngIf="artical">
+      <h3>{{ artical.title }}</h3>
+      <p>{{ artical.content }}</p>
+    </div>
+  
+    <hr>
+    
+    <div class="pb-2">
+      留言板<br><br>
+      <div *ngFor="let eachCommand of allCommand">
+        <h3>{{ eachCommand.title }}</h3>
+        <p>{{ eachCommand.date | date:'medium'}}</p>
+        <p>{{ eachCommand.content }}</p>
+        <hr>
+      </div>
+    </div>
+  
+    <app-command-form (addCommand)="addCommand($event)"></app-command-form>
+
+  </div>

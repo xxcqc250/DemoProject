@@ -1,0 +1,21 @@
+
+  <a [routerLink]="['/']"><h1>Home</h1></a>
+
+  <a>
+    <div>
+        <div *ngIf="readLocalStorageValue(); else visitor"><h1>{{ visitor_name}} 你好</h1></div>
+        <ng-template #visitor  >
+          <h1>訪客 你好</h1>
+        </ng-template>
+    </div>
+  </a>
+
+  <div *ngIf="readLocalStorageValue(); else loginButton">
+    <button (click)="logout()" class="button fancy-button">登出</button>
+  </div>
+  <ng-template #loginButton>
+    <a [routerLink]="['/login']" class="button fancy-button">
+      登入
+    </a>
+  </ng-template>
+
