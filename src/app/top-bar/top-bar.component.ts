@@ -13,6 +13,7 @@ export class TopBarComponent implements OnInit,OnChanges  {
 
   ngOnInit() {
     localStorage.clear();
+    localStorage.setItem('user_name', "訪客");
   }
   
   ngOnChanges(){
@@ -21,7 +22,7 @@ export class TopBarComponent implements OnInit,OnChanges  {
   }
   
   readLocalStorageValue() {
-    this.visitor_name = "Sam";
+    this.visitor_name = localStorage.getItem('user_name');
     return localStorage.getItem('user_id');
   }
 

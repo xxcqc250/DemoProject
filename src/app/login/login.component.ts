@@ -51,7 +51,9 @@ export class LoginComponent implements OnInit {
       if(result){
         // 有回傳資料，將使用者id存入local storage
         localStorage.setItem('user_id', result['id']);
-        // console.log("user_id : "+localStorage.getItem('user_id'));
+        localStorage.setItem('user_name', result['name']);
+        console.log("user_id : "+localStorage.getItem('user_id'));
+        console.log("user_name : "+localStorage.getItem('user_name'));
         this.login_message = "登入成功";
         this.router.navigate(['/']);
       }
