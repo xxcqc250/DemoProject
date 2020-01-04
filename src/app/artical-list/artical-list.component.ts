@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { articals } from 'src/app/articals';
+// import { articals } from 'src/app/articals';
+import { articals } from '../articals';
 
 @Component({
   selector: 'app-artical-list',

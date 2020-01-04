@@ -1,5 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { command } from 'src/app/command';
+// import { command } from 'src/app/command';
 
 @Component({
   selector: 'app-command-form',

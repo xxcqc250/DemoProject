@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
-import { AuthorizationService } from 'src/app/service/authorization.service';
+import { AuthorizationService } from '../service/authorization.service';
+// import { AuthorizationService } from 'src/app/service/authorization.service';
 import { RouterModule, Router } from '@angular/router';
 
 @Component({

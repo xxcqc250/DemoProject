@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { articals } from '../articals';
-import { command } from 'src/app/command';
+// import { command } from 'src/app/command';
+import { command } from '../command';
 
 @Component({
   selector: 'app-artical',
