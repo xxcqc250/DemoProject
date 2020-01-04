@@ -28,5 +28,6 @@ export class TopBarComponent implements OnInit,OnChanges  {
 
   logout(){
     localStorage.clear();
+    localStorage.setItem('user_name', "訪客");
   }
 }

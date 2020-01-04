@@ -16,4 +16,13 @@ export class ArticalListComponent implements OnInit {
   ngOnInit() {
   }
 
+  errorHandler(event) {
+    if(event.target.id == 'img_message_board'){
+      event.target.src = "https://i.imgur.com/VegErHY.jpg";
+    }
+    else if(event.target.id == "img_book"){
+      event.target.src = "https://i.imgur.com/z5Tlpe8.png";
+    }
+    
+  }
 }

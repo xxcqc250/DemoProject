@@ -1,11 +1,11 @@
 <div class="pt-4">
-  <img src="/assets/MESSAGE_BOARD.jpg" class="img" style="width: 100%;"> 
+  <img src="/assets/MESSAGE_BOARD.jpg" id="img_message_board" (error)="errorHandler($event)" class="img" style="width: 100%;"> 
   <div class="c-container">
     <!-- <img src="/assets/book.png" class="img-rounded"  width="50" >  -->
     <!-- <p>Feel Free To Leave Comment</p> -->
     <h3>文章列表</h3><br>
     <div *ngFor="let artical of articals" class="p-3">
-      <img src="/assets/book.png" width="30" >&nbsp;
+      <img src="/assets/book.png" id="img_book" (error)="errorHandler($event)" width="30" >&nbsp;
       <a [routerLink]="['artical', artical.id]">
         {{ artical.title }}
       </a>

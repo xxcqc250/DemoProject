@@ -15,16 +15,16 @@ Global Styles
   .container {
     
     flex-direction: row;
-    margin-top:30px;
+    /* margin-top:30px; */
     margin-bottom: 20px;
     padding-right:0px;
     padding-left:0px;
     
   }
   
-  router-outlet + *  {
+  /* router-outlet + *  {
     padding: 0 16px;
-  }
+  } */
   
   /* Text */
   
