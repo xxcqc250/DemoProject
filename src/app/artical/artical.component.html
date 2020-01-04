@@ -9,8 +9,8 @@
     <div class="pb-2">
       <h1>留言板</h1><br>
       <div *ngFor="let eachCommand of allCommand">
-        <h3>{{ eachCommand.title }}</h3>
-        <div>{{ eachCommand.content }}</div><br>
+        <h3>標題 : {{ eachCommand.title }}</h3>
+        <div style="white-space: pre-wrap;">{{ eachCommand.content }}</div><br>
         <p class="alert alert-info">by {{ eachCommand.name }} &nbsp;{{ eachCommand.date | date:'medium'}}</p>
         <hr>
       </div>
